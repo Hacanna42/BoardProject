@@ -1,0 +1,30 @@
+.tbl {
+	width:500px;
+	border-collapse: collapse;
+}
+
+.tbl caption{
+	display: none;
+}
+
+.tbl th,
+.tbl td{
+	padding: 20px 0;
+	border:1px solid #999;
+}
+.tbl thead th{
+	background: #00FFFF;
+}
+.tbl tbody th{
+	background: #A3E4D7;
+}
+.tbl thead th:first-child{
+	background:#F9E79F;
+}
+.tbl td.point{
+	font-size: 1px;
+	font-weight:1px:
+}
+.tbl td{
+	text-align:center;
+}
