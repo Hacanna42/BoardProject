@@ -7,9 +7,6 @@
 Board board = new Board();
 BoardControl control = new BoardControl();
 List<Board> list = control.selectBoardList(board);
-
-
-
 %>
     
 <!DOCTYPE html>
@@ -38,7 +35,7 @@ List<Board> list = control.selectBoardList(board);
 					
 					<td><%=list.get(i).getId()%></td>
 					<td>
-						<a href="#"><%=list.get(i).getTitle()%></a>
+						<a href="./detail.jsp?id=<%=list.get(i).getId()%>"><%=list.get(i).getTitle()%></a>
 					</td>
 					<td><%=list.get(i).getWriter()%></td>
 					<td><%=list.get(i).getWdate()%></td>
@@ -48,6 +45,8 @@ List<Board> list = control.selectBoardList(board);
 			</tbody>
 		</table>
 	</div>
+	
+	<a href="./writeForm.jsp">글 쓰기</a>
 
 </body>
 </html>
